@@ -1,93 +1,70 @@
-# MERN-Coding-challenge
+# Getting Started with Create React App
 
-Product Transactions API
-A Node.js (Express) and MongoDB-based backend service for handling product transactions. This API fetches data from a third-party source, seeds the database, and provides various endpoints for transactions, statistics, and visualizations.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-Features:
-Initialize Database: Fetches data from a third-party API and seeds the database.
-List Transactions: Supports search and pagination.
-Monthly Statistics: Total sales amount, total sold and unsold items for a selected month.
-Bar Chart Data: Price range and count of items sold in the selected month.
-Pie Chart Data: Unique categories and item count in the selected month.
-Combined API: Returns combined responses from multiple APIs.
+## Available Scripts
 
-Installation:
-Clone the repository:
+In the project directory, you can run:
 
-bash
-Copy
-git clone https://github.com/username/repository-name.git
-cd repository-name
-Install dependencies:
+### `npm start`
 
-bash
-Copy
-npm install
-Run the server:
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-bash
-Copy
-node index.js
-MongoDB should be running locally on mongodb://localhost:27017/transactions.
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-API Endpoints:
-Initialize Database
-GET /api/initialize
-Fetch and seed the database with third-party data.
+### `npm test`
 
-List Transactions
-GET /api/transactions?search=&page=1&perPage=10
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-Supports search and pagination.
-Search by title, description, or price.
-Statistics
-GET /api/statistics?month=January
-Provides total sales, total sold items, and total unsold items for the given month.
+### `npm run build`
 
-Bar Chart Data
-GET /api/bar-chart?month=January
-Returns price ranges and count of items sold in the selected month.
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-Pie Chart Data
-GET /api/pie-chart?month=January
-Returns unique categories and the count of items in each category.
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-Combined API
-GET /api/combined?month=January
-Combines responses from statistics, bar chart, and pie chart APIs.
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-Example Response:
-json
-Copy
-{
-  "statistics": {
-    "totalSaleAmount": 5000,
-    "totalSoldItems": 50,
-    "totalNotSoldItems": 20
-  },
-  "barChart": [
-    { "range": "0-100", "count": 5 },
-    { "range": "101-200", "count": 10 }
-  ],
-  "pieChart": [
-    { "category": "Electronics", "count": 20 },
-    { "category": "Clothing", "count": 15 }
-  ]
-}
-Contributing:
-Feel free to submit pull requests or open issues for improvement.
+### `npm run eject`
 
-License:
-MIT License
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-How to Add This to Your GitHub:
-Create a new GitHub repository.
-Push your local project to GitHub:
-bash
-Copy
-git init
-git add .
-git commit -m "Initial commit"
-git branch -M main
-git remote add origin https://github.com/username/repository-name.git
-git push -u origin main
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

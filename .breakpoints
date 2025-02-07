@@ -1,0 +1,20 @@
+{
+  "files": {
+    " Statistics.js": [
+      {
+        "id": "d810c997-6a4c-43ce-ba48-7940144990e4",
+        "line": 1,
+        "version": 0,
+        "index": 0
+      }
+    ],
+    "client/services/fetchDataService.js": [
+      {
+        "id": "ed1ee31f-fc82-40a2-8893-d9ad6bce9bf5",
+        "line": 6,
+        "version": 4,
+        "index": 131
+      }
+    ]
+  }
+}
